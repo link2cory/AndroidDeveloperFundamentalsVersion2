@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String LOG_TAG = MainActivity.class.getSimpleName();
     public static final String EXTRA_MESSAGE = "com.coryperkins.twoactivities.extra.MESSAGE";
     public static final int TEXT_REQUEST = 1;
 
@@ -30,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
 
         // save a reference to the reply TextView
         mReplyTextView = findViewById(R.id.text_message_reply);
+
+        // Display a Debug Message so we know that this method Happened
+        Log.d(LOG_TAG, "-------");
+        Log.d(LOG_TAG, "onCreate");
     }
 
     public void launchSecondActivity(View view) {
@@ -63,6 +68,54 @@ public class MainActivity extends AppCompatActivity {
                 mReplyTextView.setVisibility(View.VISIBLE);
             }
         }
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+
+        // Display a Debug Message so we know that this method Happened
+        Log.d(LOG_TAG, "onRestart");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        // Display a Debug Message so we know that this method Happened
+        Log.d(LOG_TAG, "onResume");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        // Display a Debug Message so we know that this method Happened
+        Log.d(LOG_TAG, "onPause");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+
+        // Display a Debug Message so we know that this method Happened
+        Log.d(LOG_TAG, "onStop");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        // Display a Debug Message so we know that this method Happened
+        Log.d(LOG_TAG, "onDestroy");
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        // Display a Debug Message so we know that this method Happened
+        Log.d(LOG_TAG, "onStart");
     }
 
 

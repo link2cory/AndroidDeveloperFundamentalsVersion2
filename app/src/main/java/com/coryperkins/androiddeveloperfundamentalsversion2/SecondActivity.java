@@ -3,12 +3,14 @@ package com.coryperkins.androiddeveloperfundamentalsversion2;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity {
 
+    private static final String LOG_TAG = MainActivity.class.getSimpleName();
     public static final String EXTRA_REPLY = "com.coryperkins.twoactivities.extra.REPLY";
     private EditText mReply;
 
@@ -39,6 +41,10 @@ public class SecondActivity extends AppCompatActivity {
 
         // send the data to the MainActivity
         setResult(RESULT_OK, replyIntent);
+
+
+        // Display a Debug Message so we know that this method Happened
+        Log.d(LOG_TAG, "End SecondActivity");
 
         // return to the MainActivity
         finish();
