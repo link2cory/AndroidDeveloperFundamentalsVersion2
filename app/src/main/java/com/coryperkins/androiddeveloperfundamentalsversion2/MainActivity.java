@@ -35,6 +35,16 @@ public class MainActivity extends AppCompatActivity {
         // Display a Debug Message so we know that this method Happened
         Log.d(LOG_TAG, "-------");
         Log.d(LOG_TAG, "onCreate");
+
+        // restore the state from the passed bundle if necessary
+        if (savedInstanceState != null) {
+            // if there was a reply saved make sure it displays properly
+            if (savedInstanceState.getBoolean("reply_visible")) {
+                mReplyHeadTextView.setVisibility(View.VISIBLE);
+                mReplyTextView.setText(savedInstanceState.getString("reply_text"));
+                mReplyTextView.setVisibility(View.VISIBLE);
+            }
+        }
     }
 
     public void launchSecondActivity(View view) {
@@ -118,5 +128,14 @@ public class MainActivity extends AppCompatActivity {
         Log.d(LOG_TAG, "onStart");
     }
 
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        if (mReplyHeadTextView.getVisibility() == View.VISIBLE) {
+            outState.putBoolean("reply_visible", true);
+            outState.putString("reply_text", mReplyTextView.getText().toString());
+        }
+    }
 
 }
