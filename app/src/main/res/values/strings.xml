@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Android Developer Fundamentals (Version 2)</string>
+    <string name="add_item_label">Add Item</string>
+    <string name="item_apple">apple</string>
+    <string name="item_orange">orange</string>
+    <string name="item_banana">banana</string>
 </resources>
