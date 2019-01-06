@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Two Activities</string>
     <string name="send_button_label">Send</string>
+    <string name="hello_button_label">Hello</string>
+    <string name="world_button_label">World</string>
+    <string name="goodbye_button_label">Goodbye</string>
 </resources>
