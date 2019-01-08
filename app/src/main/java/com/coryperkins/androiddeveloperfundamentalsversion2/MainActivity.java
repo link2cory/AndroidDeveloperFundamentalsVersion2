@@ -2,6 +2,7 @@ package com.coryperkins.androiddeveloperfundamentalsversion2;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.support.v4.app.ShareCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText mWebsiteEditText;
     private EditText mLocationEditText;
+    private EditText mShareTextEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
 
         // save a reference to the location edit text view
         mLocationEditText = findViewById(R.id.location_edittext);
+
+        // save a reference to the share text edit text view
+        mShareTextEditText = findViewById(R.id.share_edittext);
     }
 
     public void openWebsite(View view) {
@@ -59,5 +64,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void shareText(View view) {
+        String txt = mShareTextEditText.getText().toString();
+        String mimeType = "text/plain";
+
+        ShareCompat.IntentBuilder
+                .from(this)
+                .setType(mimeType)
+                .setChooserTitle(R.string.chooser_title_share_text)
+                .setText(txt)
+                .startChooser();
     }
 }
