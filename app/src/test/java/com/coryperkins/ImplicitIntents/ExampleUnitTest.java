@@ -1,4 +1,4 @@
-package com.coryperkins.androiddeveloperfundamentalsversion2;
+package com.coryperkins.ImplicitIntents;
 
 import org.junit.Test;
 

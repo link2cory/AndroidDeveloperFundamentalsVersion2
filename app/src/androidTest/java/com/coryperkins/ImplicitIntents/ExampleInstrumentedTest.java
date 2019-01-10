@@ -1,4 +1,4 @@
-package com.coryperkins.androiddeveloperfundamentalsversion2;
+package com.coryperkins.ImplicitIntents;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
