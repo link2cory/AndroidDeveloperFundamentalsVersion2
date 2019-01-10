@@ -1,0 +1,96 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml:17:1-34:12
+INJECTED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml:17:1-34:12
+INJECTED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml:17:1-34:12
+INJECTED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml:17:1-34:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/cory/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/eaf8d19f0d8f098f34d37751a13184e3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /home/cory/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/35754d3fd1fb554bd78bc246e6183775/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/cory/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/b836592c7788406b44934317178ee151/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/cory/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/afe06cdb415ceba0877ac84dcc71f765/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/cory/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/db8f689d0096363583d04d1858ecf43c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/cory/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/f11f76e1e1b1927c502adbaf95058f09/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /home/cory/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/96e3ec9e53d1a881fbbd4abfcb6d433e/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/cory/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/32c7ef66182bd4d73ef8c6e2bd29a100/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/cory/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/41b8f03d107987be4092f9add948817b/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/cory/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/9d38c04da98522b16e6671d6a4b190a4/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /home/cory/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/c8491e51236152106d7e8f81b28aeca6/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml:17:1-34:12
+INJECTED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml:17:1-34:12
+INJECTED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml:17:1-34:12
+	package
+		ADDED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml:18:5-45
+		INJECTED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml
+		INJECTED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml
+		ADDED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml:17:1-34:12
+		INJECTED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml
+		ADDED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml:17:1-34:12
+		INJECTED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml:17:11-69
+application
+ADDED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml:20:5-32:19
+	android:supportsRtl
+		ADDED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml:24:9-35
+	android:label
+		ADDED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml:23:9-41
+	android:icon
+		ADDED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml:22:9-43
+	android:allowBackup
+		ADDED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml:21:9-35
+	android:theme
+		ADDED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml:25:9-40
+activity#com.example.android.SimpleCalc.MainActivity
+ADDED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml:26:9-31:20
+	android:name
+		ADDED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml:26:19-77
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml:27:13-30:29
+action#android.intent.action.MAIN
+ADDED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml:28:17-69
+	android:name
+		ADDED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml:28:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml:29:17-77
+	android:name
+		ADDED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml:29:27-74
+uses-sdk
+INJECTED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml
+INJECTED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/cory/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/eaf8d19f0d8f098f34d37751a13184e3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/cory/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/eaf8d19f0d8f098f34d37751a13184e3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/cory/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/35754d3fd1fb554bd78bc246e6183775/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/cory/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/35754d3fd1fb554bd78bc246e6183775/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/cory/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/b836592c7788406b44934317178ee151/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/cory/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/b836592c7788406b44934317178ee151/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/cory/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/afe06cdb415ceba0877ac84dcc71f765/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/cory/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/afe06cdb415ceba0877ac84dcc71f765/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/cory/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/db8f689d0096363583d04d1858ecf43c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/cory/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/db8f689d0096363583d04d1858ecf43c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/cory/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/f11f76e1e1b1927c502adbaf95058f09/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/cory/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/f11f76e1e1b1927c502adbaf95058f09/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/cory/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/96e3ec9e53d1a881fbbd4abfcb6d433e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/cory/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/96e3ec9e53d1a881fbbd4abfcb6d433e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/cory/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/32c7ef66182bd4d73ef8c6e2bd29a100/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/cory/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/32c7ef66182bd4d73ef8c6e2bd29a100/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/cory/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/41b8f03d107987be4092f9add948817b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/cory/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/41b8f03d107987be4092f9add948817b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/cory/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/9d38c04da98522b16e6671d6a4b190a4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/cory/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/9d38c04da98522b16e6671d6a4b190a4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/cory/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/c8491e51236152106d7e8f81b28aeca6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/cory/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/c8491e51236152106d7e8f81b28aeca6/AndroidManifest.xml:20:5-44
+INJECTED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml
+INJECTED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml
+		ADDED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml
+		INJECTED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml
+		ADDED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml
+		INJECTED from /home/cory/AndroidStudioProjects/AndroidDeveloperFundamentalsVersion2/app/src/main/AndroidManifest.xml
