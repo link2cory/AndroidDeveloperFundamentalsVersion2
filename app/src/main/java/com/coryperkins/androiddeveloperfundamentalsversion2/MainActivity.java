@@ -2,6 +2,7 @@ package com.coryperkins.androiddeveloperfundamentalsversion2;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.provider.MediaStore;
 import android.support.v4.app.ShareCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -73,5 +74,16 @@ public class MainActivity extends AppCompatActivity {
                 .setChooserTitle(R.string.chooser_title_share_text)
                 .setText(txt)
                 .startChooser();
+    }
+
+    public void takePicture(View view) {
+        // setup an intent to take a picture
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+
+        // verify that there is an activity that can support this action
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            // start the camera app
+            startActivity(intent);
+        }
     }
 }
