@@ -57,7 +57,13 @@ public class MainActivity extends AppCompatActivity {
                 "color",
                 getApplicationContext().getPackageName()
         );
-        int colorRes = ContextCompat.getColor(this, colorResourceName);
+        int colorRes;
+
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
+            colorRes = getResources().getColor(colorResourceName, getTheme());
+        } else {
+            colorRes = getResources().getColor(colorResourceName);
+        }
 
         // set the hello text view to the random color
         mHelloTextView.setTextColor(colorRes);
