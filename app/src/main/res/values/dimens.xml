@@ -1,4 +1,6 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="margin_wide">24dp</dimen>
+    <dimen name="extra_wide">32dp</dimen>
+    <dimen name="margin_short">8dp</dimen>
 </resources>
