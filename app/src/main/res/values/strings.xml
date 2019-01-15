@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Android Developer Fundamentals (Version 2)</string>
+    <string name="show_toast">Show Toast</string>
+    <string name="oreo_label">Oreo cookie crumbles</string>
+    <string name="cherries_label">Cherries</string>
+    <string name="crushed_nuts_label">Crushed nuts</string>
+    <string name="sprinkles_label">Sprinkles</string>
+    <string name="chocolate_syrup_label">Chocolate syrup</string>
 </resources>
