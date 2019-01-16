@@ -39,13 +39,28 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        switch (item.getItemId()) {
-//
-//        }
-//        return true;
-//    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_order:
+                Intent intent = new Intent(this, OrderActivity.class);
+                intent.putExtra(EXTRA_MESSAGE, mOrderMessage);
+                startActivity(intent);
+                return true;
+            case R.id.action_status:
+                displayToast(getString(R.string.action_status_message));
+                return true;
+            case R.id.action_favorites:
+                displayToast(getString(R.string.action_favorites_message));
+                return true;
+            case R.id.action_contact:
+                displayToast(getString(R.string.action_contact_message));
+                return true;
+            default:
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 
     /**
      * Shows a message that the donut image was clicked
