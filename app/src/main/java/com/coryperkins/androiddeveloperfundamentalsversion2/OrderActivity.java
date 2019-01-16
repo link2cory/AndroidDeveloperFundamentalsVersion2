@@ -82,4 +82,21 @@ public class OrderActivity extends AppCompatActivity implements AdapterView.OnIt
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
+
+    public void processDatePickerResult(int year, int month, int dayOfMonth) {
+        String message =
+                getString(R.string.date_message_prefix)
+                + " "
+                + Integer.toString(month)
+                + "/"
+                + Integer.toString(dayOfMonth)
+                + "/"
+                + Integer.toString(year);
+
+        displayToast(message);
+    }
+
+    public void showDatePicker(View view) {
+        new DatePickerFragment().show(getSupportFragmentManager(), getString(R.string.datepicker));
+    }
 }
