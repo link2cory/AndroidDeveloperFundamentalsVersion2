@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Android Developer Fundamentals (Version 2)</string>
+    <string name="show_alert_text">Hello World! Tap to test the alert</string>
+    <string name="alert_button">ALERT</string>
+    <string name="alert_title">Alert</string>
+    <string name="alert_message">click OK to continue, or Cancel to stop:</string>
+    <string name="ok_button">OK</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="ok_message">Pressed OK</string>
+    <string name="cancelled_message">Pressed Cancel</string>
 </resources>
