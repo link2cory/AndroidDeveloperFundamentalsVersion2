@@ -15,16 +15,25 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showDatePicker(View view) {
-        DialogFragment newFragment = new DatePickerFragment();
-        newFragment.show(getSupportFragmentManager(), getString(R.string.datepicker));
+        DialogFragment newFragment = new TimePickerFragment();
+        newFragment.show(getSupportFragmentManager(), getString(R.string.timepicker));
     }
 
     public void processDatePickerResult(int year, int month, int day) {
-        String month_string = Integer.toString(month+1);
+        String month_string = Integer.toString(month + 1);
         String day_string = Integer.toString(day);
         String year_string = Integer.toString(year);
         String dateMessage = (month_string + "/" + day_string + "/" + year_string);
 
-        Toast.makeText(this, getString(R.string.date) + dateMessage, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.time) + dateMessage, Toast.LENGTH_SHORT).show();
+    }
+
+    public void processTimePickerResult(int hourOfDay, int minute) {
+        String message = getString(R.string.time)
+                + Integer.toString(hourOfDay)
+                + ":"
+                + Integer.toString(minute);
+
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 }

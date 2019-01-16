@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Android Developer Fundamentals (Version 2)</string>
-    <string name="date_button">Date</string>
-    <string name="choose_date_text">Hello World! Choose a date:</string>
+    <string name="time_button">Time</string>
+    <string name="choose_time_text">Hello World! Choose a time:</string>
 
-    <string name="datepicker">datePicker</string>
-    <string name="date">Date:</string>
+    <string name="timepicker">timePicker</string>
+    <string name="time">Time:</string>
 </resources>
