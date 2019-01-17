@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Android Developer Fundamentals (Version 2)</string>
+    <string name="my_app_title">My App Title</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="import_camera">Import Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="slideshow">Slideshow</string>
+    <string name="tools">Tools</string>
+    <string name="communicate">Communicate</string>
+    <string name="share">Share</string>
+    <string name="send">Send</string>
+    <string name="navigation_drawer_open">Open Navigation drawer</string>
+    <string name="navigation_drawer_close">close_navigation drawer</string>
+    <string name="nav_item_toast_prefix">Item Clicked:</string>
 </resources>
