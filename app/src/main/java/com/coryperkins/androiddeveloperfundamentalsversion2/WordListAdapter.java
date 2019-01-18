@@ -14,7 +14,7 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
     private final LinkedList<String> mWordList;
     private LayoutInflater mInflater;
 
-    class WordViewHolder extends RecyclerView.ViewHolder {
+    class WordViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         public final TextView wordItemView;
         final WordListAdapter mAdapter;
 
@@ -22,6 +22,23 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
             super(itemView);
             wordItemView = itemView.findViewById(R.id.word);
             this.mAdapter = adapter;
+
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+            // get the position of the item that was clicked
+            int mPosition = getLayoutPosition();
+
+            // use that to access the affected item in mWordList
+            String element = mWordList.get(mPosition);
+
+            // change the word in the mWordList
+            mWordList.set(mPosition, "Clicked! " + element);
+
+            // notify the adapter that the data has changed so it can update the view
+            mAdapter.notifyDataSetChanged();
         }
     }
 
