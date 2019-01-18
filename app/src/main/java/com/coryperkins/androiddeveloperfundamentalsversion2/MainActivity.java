@@ -8,6 +8,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import java.util.LinkedList;
@@ -38,14 +40,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // put initial data into the word list
-        for (int i = 0; i < 20; i++) {
-            mWordList.addLast("Word " + i);
-        }
-
-        for (int i = 0; i < 20; i++) {
-            Log.d("MainActivity", mWordList.get(i));
-        }
+        initializeData();
 
         // setup the recyclerview
         // get a handle to the recyclerView
@@ -59,5 +54,24 @@ public class MainActivity extends AppCompatActivity {
 
         // give the RecyclerView a default layout manager
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    public void initializeData() {
+        mWordList.clear();
+        // put initial data into the word list
+        for (int i = 0; i < 20; i++) {
+            mWordList.addLast("Word " + i);
+        }
+    }
+
+    public void resetData(MenuItem item) {
+        initializeData();
+        mRecyclerView.getAdapter().notifyDataSetChanged();
     }
 }
