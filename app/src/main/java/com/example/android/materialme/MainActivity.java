@@ -23,6 +23,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.support.v7.widget.helper.ItemTouchHelper.SimpleCallback;
+import android.util.Log;
 import android.view.View;
 
 import java.util.ArrayList;
@@ -58,7 +59,11 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setAdapter(mAdapter);
 
         // Get the data.
-        initializeData();
+        if (savedInstanceState != null) {
+            restoreData(savedInstanceState);
+        } else {
+            initializeData();
+        }
 
         ItemTouchHelper helper = new ItemTouchHelper(
             new ItemTouchHelper.SimpleCallback(
@@ -89,16 +94,29 @@ public class MainActivity extends AppCompatActivity {
         helper.attachToRecyclerView(mRecyclerView);
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putParcelableArrayList("SportsData", mSportsData);
+        super.onSaveInstanceState(outState);
+    }
+
+    private void restoreData(Bundle savedInstanceState) {
+        ArrayList<Sport> savedSportsList = savedInstanceState.getParcelableArrayList("SportsData");
+
+        mSportsData.clear();
+        mSportsData.addAll(savedSportsList);
+        mAdapter.notifyDataSetChanged();
+    }
+
     /**
      * Initialize the sports data from resources.
      */
     private void initializeData() {
-        TypedArray sportsImageResources = getResources().obtainTypedArray(R.array.sports_images);
         // Get the resources from the XML file.
-        String[] sportsList = getResources()
-                .getStringArray(R.array.sports_titles);
-        String[] sportsInfo = getResources()
-                .getStringArray(R.array.sports_info);
+        String[] sportsList = getResources().getStringArray(R.array.sports_titles);
+        String[] sportsInfo = getResources().getStringArray(R.array.sports_info);
+        String[] sportsDetails = getResources().getStringArray(R.array.sports_details);
+        TypedArray sportsImageResources = getResources().obtainTypedArray(R.array.sports_images);
 
         // Clear the existing data (to avoid duplication).
         mSportsData.clear();
@@ -113,7 +131,8 @@ public class MainActivity extends AppCompatActivity {
                             sportsImageResources.getResourceId(
                                     i,
                                     0
-                            )
+                            ),
+                            sportsDetails[i]
                     )
             );
         }
