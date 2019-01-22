@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.coryperkins.androiddeveloperfundamentalsversion2.SecondActivity">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/circle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="32dp"
+            android:onClick="reloadActivityWithExplode"
+            android:src="@drawable/circle" />
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="32dp"
+            android:onClick="reloadActivityWithFade"
+            android:src="@drawable/line" />
+
+        <ImageView
+            android:id="@+id/square"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="32dp"
+            android:onClick="rotateSquare"
+            android:src="@drawable/square"
+            android:transitionName="square"/>
+
+        <ImageView
+            android:id="@+id/icon_android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:onClick="loadMainActivity"
+            android:src="@drawable/ic_android"
+            android:transitionName="android_icon" />
+
+
+    </GridLayout>
+
+
+</android.support.constraint.ConstraintLayout>
