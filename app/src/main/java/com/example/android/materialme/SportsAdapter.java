@@ -134,6 +134,7 @@ class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder>  {
             Intent detailIntent = new Intent(mContext, DetailActivity.class);
             detailIntent.putExtra("title", currentSport.getTitle());
             detailIntent.putExtra("image_resource", currentSport.getImageResource());
+            detailIntent.putExtra("details", currentSport.getDetails());
 
             // setup shared elements transition
             if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP){
