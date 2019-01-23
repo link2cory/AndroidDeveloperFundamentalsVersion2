@@ -16,15 +16,33 @@
 
 package com.example.android.materialme;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 /**
  * Data model for each row of the RecyclerView
  */
-class Sport {
+class Sport implements Parcelable {
     private final int imageResource;
 
     // Member variables representing the title and information about the sport.
     private String title;
     private String info;
+    private String details;
+
+    /**
+     * Parcelable Creator
+     */
+    public static final Parcelable.Creator<Sport> CREATOR = new Parcelable.Creator<Sport>() {
+      public Sport createFromParcel(Parcel in) {
+          return new Sport(in);
+      }
+
+        @Override
+        public Sport[] newArray(int size) {
+            return new Sport[size];
+        }
+    };
 
     /**
      * Constructor for the Sport data model.
@@ -32,11 +50,11 @@ class Sport {
      * @param title The name if the sport.
      * @param info Information about the sport.
      */
-    Sport(String title, String info, int imageResource) {
+    Sport(String title, String info, int imageResource, String details) {
         this.title = title;
         this.info = info;
-
         this.imageResource = imageResource;
+        this.details = details;
     }
 
     /**
@@ -59,5 +77,43 @@ class Sport {
 
     public int getImageResource() {
         return imageResource;
+    }
+
+    public String getDetails() {
+        return details;
+    }
+
+    /**
+     * Parcelable Interface Constructor
+     * @param in
+     */
+    private Sport(Parcel in) {
+        this.title = in.readString();
+        this.info = in.readString();
+        this.imageResource = in.readInt();
+        this.details = in.readString();
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(this.title);
+        dest.writeString(this.info);
+        dest.writeInt(this.imageResource);
+        dest.writeString(this.details);
+    }
+
+    @Override
+    public String toString() {
+        return "Sport{"
+                + "title='" + this.title + "', "
+                + "info='" + this.info + "', "
+                + "details='" + this.details + "', "
+                + "imageResource='" + Integer.toString(this.imageResource) + "'"
+                + "}";
     }
 }

@@ -48,6 +48,20 @@
         <item>Here is some Tennis news!</item>
     </string-array>
 
+    <string-array name="sports_details">
+        <item>Here is some Baseball details!</item>
+        <item>Here is some Badminton details!</item>
+        <item>Here is some Basketball details!</item>
+        <item>Here is some Bowling details!</item>
+        <item>Here is some Cycling details!</item>
+        <item>Here is some Golf details!</item>
+        <item>Here is some Running details!</item>
+        <item>Here is some Soccer details!</item>
+        <item>Here is some Swimming details!</item>
+        <item>Here is some Table Tennis details!</item>
+        <item>Here is some Tennis details!</item>
+    </string-array>
+
     <string-array name="sports_images">
         <item>@drawable/img_baseball</item>
         <item>@drawable/img_badminton</item>
