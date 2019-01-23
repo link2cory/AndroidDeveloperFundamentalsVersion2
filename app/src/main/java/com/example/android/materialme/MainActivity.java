@@ -19,7 +19,7 @@ package com.example.android.materialme;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.View;
@@ -52,7 +52,13 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView = findViewById(R.id.recyclerView);
 
         // Set the Layout Manager.
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        int numColumns = getResources().getInteger(R.integer.columns);
+        mRecyclerView.setLayoutManager(
+                new GridLayoutManager(
+                this,
+                        numColumns
+                )
+        );
 
         // Initialize the ArrayList that will contain the data.
         mSportsData = new ArrayList<>();
@@ -64,10 +70,17 @@ public class MainActivity extends AppCompatActivity {
         // Get the data.
         initializeData();
 
+        int swipeDirs;
+        if (numColumns > 1) {
+            swipeDirs = 0;
+        } else {
+            swipeDirs = ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT;
+        }
+
         ItemTouchHelper helper = new ItemTouchHelper(
             new ItemTouchHelper.SimpleCallback(
                 ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT | ItemTouchHelper.DOWN | ItemTouchHelper.UP,
-                ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT
+                swipeDirs
             ) {
                 @Override
                 public boolean onMove(
