@@ -16,8 +16,10 @@
 
 package com.example.android.materialme;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -132,7 +134,18 @@ class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder>  {
             Intent detailIntent = new Intent(mContext, DetailActivity.class);
             detailIntent.putExtra("title", currentSport.getTitle());
             detailIntent.putExtra("image_resource", currentSport.getImageResource());
-            mContext.startActivity(detailIntent);
+
+            // setup shared elements transition
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP){
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
+                        (Activity) mContext,
+                        v.findViewById(R.id.sportsImage),
+                        "sportsImage"
+                );
+                mContext.startActivity(detailIntent, options.toBundle());
+            } else {
+                mContext.startActivity(detailIntent);
+            }
         }
     }
 }
