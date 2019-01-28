@@ -65,8 +65,8 @@ public class MainActivity extends AppCompatActivity {
     public void initializeData() {
         mWordList.clear();
         // put initial data into the word list
-        for (int i = 0; i < 20; i++) {
-            mWordList.addLast("Word " + i);
+        for (int i = 0; i < getResources().getInteger(R.integer.num_elements); i++) {
+            mWordList.addLast(getString(R.string.word_item_prefix) + i);
         }
     }
 
